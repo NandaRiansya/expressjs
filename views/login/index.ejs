@@ -2,17 +2,18 @@
 <html>
     <%- include('../layout/header'); -%>
   <body>
-    <%- include('../layout/header'); -%>
     <div class="kotak ">
       <h1> LOGIN  </h1>
       <hr>
+      <form action="http://localhost:3000/login" method="post">
       <div class="form-input">
-        <input type="text" placeholder="email" class="user">
-        <input type="text" placeholder="password" class="user">
+        <input type="text" name="username" placeholder="username" class="user">
+        <input type="password" name="password" placeholder="password" class="user">
       </div>
       <div class="form-button">
         <button type="submit" class="tombol">Submit</button>
       </div>
+    </form>
     </div>
     <%- include('../layout/footer'); -%>
   </body>
